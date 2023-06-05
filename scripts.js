@@ -5,9 +5,6 @@ form.addEventListener("submit", e => {
     alert(`Thanks ${name} !  I'll get back to you as soon as possible.`)
 })
 
-
-
-
 main();
 function sleep(ms) {
     return new Promise((r) => setTimeout(r, ms));

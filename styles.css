@@ -45,12 +45,17 @@ header {
 	width: 80%;
 }
 
+#hi {
+	color: rgba(0, 0, 0, 0);
+}
+
 .tail {
 	border-right: 3px solid white;
 	animation: blink 700ms infinite forwards;
 	width: min-content;
 	margin: auto;
 	height: auto;
+	color: white;
 }
 
 @keyframes blink {
@@ -117,6 +122,10 @@ li img {
 li img:hover {
 	transform: scale(1.1);
 	cursor: pointer;
+}
+
+form {
+	text-align: start;
 }
 
 input {
@@ -188,11 +197,28 @@ iframe {
 	.column-75 {
 		width: 50%;
 	}
+
+	input {
+		width: 70%;
+	}
+
+	label {
+		width: 25%;
+	}
+
+	.w40 {
+		width: 100%;
+	}
+
+	#for {
+		width: 100%;
+	}
 }
 
 @media screen and (max-width:700px) {
 	main {
 		text-align: center;
+		padding: 0px;
 	}
 
 	ul,
@@ -204,6 +230,22 @@ iframe {
 	.column-50,
 	.column-75,
 	section {
+		width: 100%;
+	}
+
+	input {
+		width: 70%;
+	}
+
+	label {
+		width: 25%;
+	}
+
+	.w40 {
+		width: 100%;
+	}
+
+	#for {
 		width: 100%;
 	}
 }
@@ -218,9 +260,4 @@ input::-webkit-inner-spin-button {
 input[type=number] {
 	appearance: inherit;
 	-moz-appearance: textfield;
-}
-
-.align {
-	display: flex;
-	height: 100%;
 }
